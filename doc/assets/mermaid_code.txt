@@ -1,0 +1,47 @@
+gantt
+    title Progetto GeoControl - Gantt Chart
+    dateFormat  YYYY-MM-DD
+    axisFormat  %Y-%m-%d
+    excludes    weekends
+    todayMarker off
+
+    section Requirements Planning
+    Business model definition           :   a1, 2025-03-25, 3d
+    Stakeholders analysis               :   a2, after a1, 2d
+    Context diagram and interface       :   a3, 2025-04-01, 2d
+    Personas and user stories           :   a4, after a3, 1d
+    FR Definition                       :   a5, 2025-04-04, 3d
+    NFR Definition                      :   a6, 2025-04-04, 3d
+    Use cases and scenarios             :        a7, after a5, 4d
+    Class Diagram                       :        a8, 2025-04-11, 2d
+    Glossary                            :        a9, 2025-04-14, 1d
+    Deployment Diagram                  :        a10, 2025-04-15, 2d
+    Requirements Planning               :milestone, a11, 2025-04-17, 0d
+    
+    section Software Design
+    Software model                      :        b1, 2025-04-19, 3d
+    Definition of endpoints/data flow   :        b2, 2025-04-19, 3d
+    UI/UX and interface mockups         :        b3, 2025-04-23, 1d
+    Software Design                     :milestone, b4, 2025-04-24, 0d
+
+    section Code Implementation
+    Database ER schema and tables       :        c1, 2025-04-24, 2d
+    Backend DB implementation           :        c2, 2025-04-26, 18d
+    Backend server implementation       :        c3, 2025-04-26, 18d
+    Backend/Frontend Integration        :        c4, after c3, 3d
+    Code Implementation                 :milestone, c5, 2025-05-24, 0d
+
+    section Unit & API Test Session
+    Unit tests for frontend             :        d1, 2025-05-24, 4d
+    API tests backend (routes)          :        d2, 2025-05-24, 4d
+    Unit tests backend (DB)             :        d3, 2025-05-24, 4d
+    Unit/API Test Session (Exec + Debug)               :        d4, after d3, 2d
+    Test Completed                 :milestone, c6, 2025-05-31, 0d
+
+    section Final Code Polishing
+    Final reviwes and polishing         :        e1, 2025-05-31, 2025-06-07
+    Final Code                 :milestone, c6, 2025-06-07, 0d
+
+    section Final Delivery
+    Packaging and deployment            :        f1, 2025-06-08, 11d
+    Final presentation/demo             :        f2, 2025-06-21, 1d
